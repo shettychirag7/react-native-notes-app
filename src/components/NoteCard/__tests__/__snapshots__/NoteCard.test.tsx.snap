@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteCard component tests renders NoteCard component 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "borderRadius": 16,
+      "elevation": 8,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "margin": 8,
+      "opacity": 1,
+      "padding": 16,
+      "shadowColor": "grey",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+      "width": 359,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#222222",
+            "fontFamily": "Montserrat-Bold",
+            "fontSize": 16,
+            "letterSpacing": 0.1,
+            "lineHeight": 21.6,
+          },
+          Object {
+            "marginVertical": 4,
+          },
+        ]
+      }
+    >
+      Hello
+    </Text>
+    <Text
+      ellipsizeMode="tail"
+      numberOfLines={3}
+      style={
+        Array [
+          Object {
+            "color": "#222222",
+            "fontFamily": "Montserrat-Regular",
+            "fontSize": 16,
+          },
+          Object {
+            "marginVertical": 4,
+          },
+        ]
+      }
+    >
+      Hello World
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#008b9a",
+            "fontFamily": "Montserrat-Medium",
+            "fontSize": 14,
+          },
+          undefined,
+        ]
+      }
+    >
+      General
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#008b9a",
+            "fontFamily": "Montserrat-Medium",
+            "fontSize": 14,
+          },
+          undefined,
+        ]
+      }
+    >
+      12 Mar '22
+    </Text>
+  </View>
+</View>
+`;
