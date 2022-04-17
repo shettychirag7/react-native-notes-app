@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component test renders ListItem component 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "white",
+      "elevation": 8,
+      "flex": 1,
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+      "opacity": 1,
+      "padding": 16,
+      "shadowColor": "grey",
+      "shadowOffset": Object {
+        "height": 0,
+        "width": 0,
+      },
+      "shadowOpacity": 0.2,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#222222",
+          "fontFamily": "Montserrat-Medium",
+          "fontSize": 16,
+          "letterSpacing": 0.1,
+        },
+        Object {
+          "marginHorizontal": 16,
+          "marginVertical": 8,
+        },
+      ]
+    }
+  >
+    Category 1
+  </Text>
+  <Text
+    allowFontScaling={false}
+    selectable={false}
+    style={
+      Array [
+        Object {
+          "color": undefined,
+          "fontSize": 24,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Material Icons",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
