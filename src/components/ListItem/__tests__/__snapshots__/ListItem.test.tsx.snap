@@ -32,24 +32,32 @@ exports[`ListItem component test renders ListItem component 1`] = `
     }
   }
 >
-  <Text
+  <TextInput
+    onEndEditing={[Function]}
     style={
-      Array [
-        Object {
-          "color": "#222222",
-          "fontFamily": "Montserrat-Medium",
-          "fontSize": 16,
-          "letterSpacing": 0.1,
-        },
-        Object {
-          "marginHorizontal": 16,
-          "marginVertical": 8,
-        },
-      ]
+      Object {
+        "marginHorizontal": 16,
+        "marginVertical": 8,
+      }
     }
+    testID="ip_field"
   >
-    Category 1
-  </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#222222",
+            "fontFamily": "Montserrat-Medium",
+            "fontSize": 16,
+            "letterSpacing": 0.1,
+          },
+          undefined,
+        ]
+      }
+    >
+      Category 1
+    </Text>
+  </TextInput>
   <Text
     allowFontScaling={false}
     selectable={false}

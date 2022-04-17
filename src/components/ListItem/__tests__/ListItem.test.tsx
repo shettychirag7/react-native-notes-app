@@ -28,4 +28,21 @@ describe('ListItem component test', () => {
 
     expect(mockOnPress).toHaveBeenCalledTimes(1);
   });
+
+  it('triggers onUpdate callback on text input', () => {
+    const mockOnPress = jest.fn();
+    const {getByTestId} = render(
+      <ThemeProvider value={{theme: themes.base}}>
+        <ListItem name="Category 1" onUpdate={mockOnPress} />
+      </ThemeProvider>,
+    );
+
+    getByTestId('ip_field').props.onEndEditing({
+      nativeEvent: {
+        text: '123',
+      },
+    });
+
+    expect(mockOnPress).toHaveBeenCalledWith('123');
+  });
 });
