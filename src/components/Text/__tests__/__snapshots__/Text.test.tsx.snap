@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component tests renders body text 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Montserrat-Regular",
+      "fontSize": 16,
+      "letterSpacing": 0.1,
+      "lineHeight": 21.6,
+    }
+  }
+>
+  Hello World
+</Text>
+`;
+
+exports[`Text component tests renders bold body text 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Montserrat-Medium",
+      "fontSize": 16,
+      "letterSpacing": 0.1,
+      "lineHeight": 21.6,
+    }
+  }
+>
+  Hello World
+</Text>
+`;
+
+exports[`Text component tests renders page title text 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Montserrat-Bold",
+      "fontSize": 24,
+      "letterSpacing": 0.1,
+      "lineHeight": 32.400000000000006,
+    }
+  }
+>
+  Hello World
+</Text>
+`;
+
+exports[`Text component tests renders section title text 1`] = `
+<Text
+  style={
+    Object {
+      "fontFamily": "Montserrat-SemiBold",
+      "fontSize": 20,
+      "letterSpacing": 0.1,
+      "lineHeight": 27,
+    }
+  }
+>
+  Hello World
+</Text>
+`;
