@@ -7,16 +7,22 @@ interface TextProps extends RNTextProps {
   /**
    * type of text to render. Props is mandatory
    */
-  type: 'pageTitle' | 'sectionTitle' | 'body' | 'boldBody';
+  type:
+    | 'pageTitle'
+    | 'sectionTitle'
+    | 'cardTitle'
+    | 'body'
+    | 'boldBody'
+    | 'bodyLight';
 }
 
 const Text = (props: TextProps) => {
-  const {type, ...rest} = props;
+  const {type, style: styleProps, ...rest} = props;
 
   const style = useStylePicker();
 
   return (
-    <RNText style={style[type]} {...rest}>
+    <RNText style={[style[type], styleProps]} {...rest}>
       {props.children}
     </RNText>
   );

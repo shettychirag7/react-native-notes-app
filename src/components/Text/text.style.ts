@@ -18,10 +18,16 @@ const getStyleObject = ({theme}: GeneratorProps) =>
       lineHeight: theme.fontSize.lg * 1.35,
       color: theme.colors.neutral.N70,
     },
+    cardTitle: {
+      fontFamily: theme.fontFamily.titleBold,
+      fontSize: theme.fontSize.md,
+      letterSpacing: 0.1,
+      lineHeight: theme.fontSize.md * 1.35,
+      color: theme.colors.neutral.N70,
+    },
     body: {
       fontFamily: theme.fontFamily.bodyRegular,
       fontSize: theme.fontSize.md,
-      letterSpacing: 0.1,
       color: theme.colors.neutral.N70,
     },
     boldBody: {
@@ -29,6 +35,11 @@ const getStyleObject = ({theme}: GeneratorProps) =>
       fontSize: theme.fontSize.md,
       letterSpacing: 0.1,
       color: theme.colors.neutral.N70,
+    },
+    bodyLight: {
+      fontFamily: theme.fontFamily.bodyBold,
+      fontSize: theme.fontSize.sm,
+      color: theme.colors.primary[80],
     },
   });
 
