@@ -9,7 +9,7 @@ describe('ListItem component test', () => {
   it('renders ListItem component', () => {
     const {toJSON} = render(
       <ThemeProvider value={{theme: themes.base}}>
-        <ListItem name="Category 1" />
+        <ListItem name="Category 1" id={1} />
       </ThemeProvider>,
     );
 
@@ -20,7 +20,12 @@ describe('ListItem component test', () => {
     const mockOnPress = jest.fn();
     const {getByTestId} = render(
       <ThemeProvider value={{theme: themes.base}}>
-        <ListItem name="Category 1" testID="category_1" onPress={mockOnPress} />
+        <ListItem
+          name="Category 1"
+          testID="category_1"
+          id={1}
+          onPress={mockOnPress}
+        />
       </ThemeProvider>,
     );
 
@@ -33,11 +38,11 @@ describe('ListItem component test', () => {
     const mockOnPress = jest.fn();
     const {getByTestId} = render(
       <ThemeProvider value={{theme: themes.base}}>
-        <ListItem name="Category 1" onUpdate={mockOnPress} />
+        <ListItem name="Category 1" id={1} onUpdate={mockOnPress} />
       </ThemeProvider>,
     );
 
-    getByTestId('ip_field').props.onEndEditing({
+    getByTestId('ip_field_1').props.onEndEditing({
       nativeEvent: {
         text: '123',
       },
