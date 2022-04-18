@@ -15,7 +15,7 @@ exports[`NoteCard component tests renders NoteCard component 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "white",
+      "backgroundColor": "#FFFFFF",
       "borderRadius": 16,
       "elevation": 8,
       "flexDirection": "row",
@@ -23,7 +23,7 @@ exports[`NoteCard component tests renders NoteCard component 1`] = `
       "margin": 8,
       "opacity": 1,
       "padding": 16,
-      "shadowColor": "grey",
+      "shadowColor": "#A8A8A8",
       "shadowOffset": Object {
         "height": 0,
         "width": 0,
