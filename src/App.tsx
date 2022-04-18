@@ -10,15 +10,19 @@
 
 import React from 'react';
 import {ThemeProvider} from './providers/theme';
+import {Provider} from 'react-redux';
 
 import Navigation from './Navigation';
 import themes from './constants/theme';
+import {store} from './redux/store';
 
 const App = () => {
   return (
-    <ThemeProvider value={{theme: themes.base}}>
-      <Navigation />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider value={{theme: themes.base}}>
+        <Navigation />
+      </ThemeProvider>
+    </Provider>
   );
 };
 
