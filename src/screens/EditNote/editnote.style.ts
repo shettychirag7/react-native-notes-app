@@ -6,20 +6,17 @@ const getStyleObject = ({theme}: GeneratorProps) =>
   StyleSheet.create({
     container: {
       flex: 1,
+      padding: theme.space.sm,
     },
-    footer: {
-      position: 'absolute',
-      right: 25,
-      bottom: 25,
+    header: {
+      marginTop: theme.space.md,
     },
-    empty: {
+    category: {
+      marginVertical: theme.space.sm,
+    },
+    body: {
       flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    emptyText: {
-      textAlign: 'center',
-      marginHorizontal: theme.space.md,
+      marginVertical: theme.space.lg,
     },
   });
 

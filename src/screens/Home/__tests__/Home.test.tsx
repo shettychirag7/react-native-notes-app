@@ -10,6 +10,12 @@ import {createStore} from '../../../redux/store';
 import {act} from 'react-test-renderer';
 import {Store} from 'redux';
 
+jest.mock('@react-navigation/core', () => ({
+  useNavigation: () => ({
+    dispatch: jest.fn(),
+  }),
+}));
+
 const HomeComponent = ({store}: {store: Store}) => {
   return (
     <Provider store={store}>

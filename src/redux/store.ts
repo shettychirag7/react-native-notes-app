@@ -1,10 +1,20 @@
 import {configureStore} from '@reduxjs/toolkit';
 import rootReducer from './slice';
+import {CategoryState} from './slice/categories';
+import {NotesState} from './slice/notes';
 
-export const createStore = () => {
+interface InitialState {
+  categories?: CategoryState;
+  notes?: NotesState;
+}
+
+export const createStore = (initialState?: InitialState) => {
   const store = configureStore({
     reducer: {
       ...rootReducer,
+    },
+    preloadedState: {
+      ...initialState,
     },
   });
   return store;

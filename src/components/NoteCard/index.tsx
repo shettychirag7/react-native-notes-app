@@ -18,14 +18,10 @@ export interface NoteCardProps extends TouchableOpacityProps {
    * Category type of notes.
    */
   category: string;
-  /**
-   * Date of creation of note
-   */
-  creationDate: string;
 }
 
 const NoteCard = (props: NoteCardProps) => {
-  const {title, category, creationDate, description, ...rest} = props;
+  const {title, category, description, ...rest} = props;
 
   const styles = useStylePicker();
 
@@ -45,7 +41,6 @@ const NoteCard = (props: NoteCardProps) => {
         <Text type="bodyLight" numberOfLines={1}>
           {category}
         </Text>
-        <Text type="bodyLight">{creationDate}</Text>
       </View>
     </TouchableOpacity>
   );

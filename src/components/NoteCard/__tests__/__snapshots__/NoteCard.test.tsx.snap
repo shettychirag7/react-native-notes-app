@@ -86,20 +86,6 @@ exports[`NoteCard component tests renders NoteCard component 1`] = `
     >
       General
     </Text>
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#008b9a",
-            "fontFamily": "Montserrat-Medium",
-            "fontSize": 14,
-          },
-          undefined,
-        ]
-      }
-    >
-      12 Mar '22
-    </Text>
   </View>
 </View>
 `;
