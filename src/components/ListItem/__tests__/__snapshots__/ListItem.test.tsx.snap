@@ -41,7 +41,7 @@ exports[`ListItem component test renders ListItem component 1`] = `
         "marginVertical": 8,
       }
     }
-    testID="ip_field"
+    testID="ip_field_1"
   >
     <Text
       style={
@@ -55,6 +55,7 @@ exports[`ListItem component test renders ListItem component 1`] = `
           undefined,
         ]
       }
+      testID="txt_field_1"
     >
       Category 1
     </Text>
