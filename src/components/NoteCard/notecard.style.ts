@@ -9,9 +9,9 @@ const getStyleObject = ({theme, screen}: GeneratorProps) =>
     cardview: {
       width: screen.width / 2 - OFFSET_MARGIN,
       alignItems: 'center',
-      backgroundColor: 'white',
+      backgroundColor: theme.colors.neutral.white,
       borderRadius: theme.space.md,
-      shadowColor: 'grey',
+      shadowColor: theme.colors.neutral.N30,
       shadowOffset: {width: 0, height: 0},
       shadowOpacity: 1,
       shadowRadius: theme.space.sm,

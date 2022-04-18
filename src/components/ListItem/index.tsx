@@ -18,6 +18,7 @@ const ListItem = (props: ListItemProps) => {
     <TouchableOpacity {...rest} style={styles.listitem}>
       <TextInput
         testID="ip_field"
+        selectTextOnFocus={true}
         style={styles.title}
         onEndEditing={e => onUpdate?.(e.nativeEvent.text)}>
         <Text type={'boldBody'}>{name}</Text>
