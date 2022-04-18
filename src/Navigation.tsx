@@ -2,6 +2,9 @@ import React, {useContext} from 'react';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {ThemeContext} from './providers/theme';
+import NoteList from './screens/NoteList';
+import Home from './screens/Home';
+import EditNote from './screens/EditNote';
 
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
@@ -27,7 +30,9 @@ const Navigation = () => {
           },
           headerTintColor: theme.colors.neutral.black,
         }}>
-        <Stack.Screen name="Home" component={() => null} />
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NoteList" component={NoteList} />
+        <Stack.Screen name="EditNote" component={EditNote} />
       </Stack.Navigator>
     </NavigationContainer>
   );

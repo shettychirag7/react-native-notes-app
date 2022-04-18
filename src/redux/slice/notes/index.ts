@@ -3,7 +3,6 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 export interface Notes {
   title: string;
   description: string;
-  creationDate: string;
 }
 
 export interface NotesState {
@@ -53,12 +52,18 @@ const notesSlice = createSlice({
       state,
       {payload}: PayloadAction<{category: string; index: number}>,
     ) => {
-      delete state.notes[payload.category][payload.index];
+      state.notes[payload.category].splice(payload.index, 1);
     },
   },
 });
 
-export const {onCreateCategory, onEditCategory, onDeleteCategory} =
-  notesSlice.actions;
+export const {
+  onCreateCategory,
+  onEditCategory,
+  onDeleteCategory,
+  createNewNote,
+  editNote,
+  deleteNote,
+} = notesSlice.actions;
 
 export default notesSlice;
